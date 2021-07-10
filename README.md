@@ -17,7 +17,7 @@ Luke McMurtrie
 Luke's Github: https://github.com/LukeMcM89
 
 
-This project is centered around an user's horoscope and moon chart. 
+This project is centered around a users horoscope and moon chart. 
 
 
 
