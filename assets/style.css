@@ -1,36 +1,22 @@
-h1 {
-    font-weight: 300;
-    margin: 0px;
-    padding: 20px;
-    font-size: 40px;
-    background-color: rgb(224, 144, 224);
-    color:beige;
-    text-align: center;
-}
-
-body {
-    text-align: center;
-}
-
 nav {
-    background-color:bisque;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(170, 84, 170);
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.container {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-    height: 200px;
-    position: relative;
-    border: 3px solid black;
-}
+nav ul a {
+    color: #DDE1E9;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: large;
+  }
 
+  nav .horo-logo {
+    color: #DDE1E9;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3vw;
+    padding-left: 2%;
+  }
 
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-
+  .horo-text {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+  }
