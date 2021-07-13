@@ -1,20 +1,26 @@
 nav {
-    background-color: rgb(170, 84, 170);
-    font-family: 'Montserrat Alternates', sans-serif;
+  background-color: rgb(170, 84, 170);
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 nav ul a {
-    color: #DDE1E9;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: large;
-  }
+  color: #dde1e9;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: large;
+}
 
-  nav .horo-logo {
-    color: #DDE1E9;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 3vw;
-    padding-left: 2%;
-  }
+nav .horo-logo {
+  color: #dde1e9;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3vw;
+  padding-left: 2%;
+}
+
+.horo-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
 
   .horo-text {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -27,3 +33,7 @@ nav ul a {
 
 
  
+.carousel-item {
+  background-color: grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
