@@ -9,6 +9,7 @@ nav ul a {
   font-size: large;
 }
 
+
 nav .horo-logo {
   color: #dde1e9;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,23 +17,11 @@ nav .horo-logo {
   padding-left: 2%;
 }
 
-.horo-text {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
   .horo-text {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-align: center;
   }
 
-
-
-
-
-
- 
 .carousel-item {
   background-color: grey;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
