@@ -43,6 +43,10 @@ function zodiacSign(day, month) {
         return zodiacSigns.gem
     } else if (( month == 6 && day >=22) || ( month == 7 && day <=22)) {
         return zodiacSigns.can
-    } 
+    } else if (( month == 7 && day >=23) || ( month == 8 && day <= 22)) {
+        return zodiacSigns.leo
+    } else if (( month == 8 && day >=23) || ( month == 9 && day <= 22)) {
+        return zodiacSigns.vir
+    } else if (( month == 9 && day >=23) || ( month == 10 && ))
 }
 
