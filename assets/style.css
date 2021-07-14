@@ -1,23 +1,12 @@
 
-
-  .horo-text {
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
-  }
- 
-
-.carousel-item {
-  background-color: grey;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
 body {
 	margin: 0;
-  overflow: hidden;
+  /* to get rid of scrolling */
+  /* overflow: hidden; */
 }
+/*this is for the background 
 
-.container {
+/* .container {
 	background-image: url("https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=100");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -25,9 +14,9 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-}
+} */
 
-.star {
+/* .star {
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(255, 255, 255);
 	border-radius: 50%;
@@ -38,4 +27,4 @@ body {
 	transform: translate(-50%, -50%);
 	height: 4px;
 	width: 4px;
-}
+} */
