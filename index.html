@@ -6,7 +6,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Horoscope</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -31,60 +30,29 @@
 
     </header>
 
-    <div class="container" id="main" style="position: sticky; margin-top:150px">
-        <div class="carousel carousel-slider center">
-
-            <a id="carousel-prev" class="movePrevCarousel controlButton waves-effect left"><i
-                    class="arrow buttonleft"></i></a>
-
-            <a id="carousel-next" class="moveNextCarousel controlButton waves-effect right"><i
-                    class="arrow buttonright"></i></a>
-
-            <div class="carousel-item horo-text" href="#slideone" data-slide-to="0">
-                <span class="icon-prev" aria-hidden="true"></span>
-                <h2>Welcome to ______</h2>
-                <p class="horo-text">Are you interested in decoding your immediate future? Perhaps you are curious as to
-                    how events may unfold or present themselves to you today? <br>
-                    Well, humans have looked to the stars and consulted the cosmos for thousands of years, and you can
-                    too!</p>
-                </p>
-            </div>
-
-            <div class="carousel-item horo-text" href="#slidetwo" data-slide-to="1">
-                <h2>A Brief History of Horoscopes</h2>
-                <p class="horo-text">A horoscope is an astrological chart, also commonly referred to as a natal chart or
-                    cosmogram, that represents the
-                    position of the Sun, Moon, planets, astrological aspects and sensitive angels at the time of an
-                    event. An important moment for many
-                    being the moment of a persons birth.</p> <br>
-                <p class="horo-text">The word <em>horoscope</em> is derived from the Greek words <em>ora</em> and
-                    <em>scopos</em> meaning "time" and "observer
-                    of the hour". Essentially, the horoscope serves as a stylized map of the heavens over a specific
-                    location at a particular moment in time.
-                    The positions of the planets, including the Sun and Moon are placed in the chart, along with other
-                    calculated factor such as the lunar nodes,
-                    the house cusps, the zodiac signs and fixed stars. The angular relationships between the planets
-                    themselves and other points, called aspects
-                    are then determined. It is important to note that the emphasis and interpretation of these factors
-                    vary with tradition. So in essence, the stars
-                    were placed at the time of birth for a person shows their characteristics and personality, including
-                    weakness.</p>
-            </div>
-
-            <div class="carousel-item horo-text" href="#slidethree" data-slide-to="2">
-                <h2>Phase of the Moon</h2>
-                <p class="horo-text">Moon information. Moon information. Moon information. Moon information.</p>
-            </div>
-
-            <div class="carousel-item horo-text" href="#slidefour" data-slide-to="3">
-                <h2>Your Horoscope</h2>
-                <p class="horo-text">Horo information. Horo information. Horo information. Horo information.</p>
-            </div>
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+            <div class="numbertext"> 1 / 3</div>
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Caption Text </div>
         </div>
-    </div>>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 2 / 3</div>
+            <img src="img2.jpg" style="width: 100%">
+            <div class="text">Caption Text </div>
+        </div>
+
         
+        <a class="prev" onclick"plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick"plusSlides(1)">&#10095;</a>
+    </div>
 
-
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
             <script src="assets/background.js"></script>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -111,11 +79,6 @@
             <div class="text">Caption Text </div>
         </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext"> 3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
 -->
 
 <!--   
@@ -129,6 +92,5 @@
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 -->
