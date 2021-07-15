@@ -4,11 +4,11 @@ $(document).ready(function () {
         // pull the month and day 
         var day = $("#day").val();
         var month = $("#month").val();
-        // var day = $("#day").val()
-        // var month = $("#month").val()
+        var day = $("#day").val()
+        var month = $("#month").val()
         var today = new Date();
-        var dd = String(today.getDate()).padStart();
-        var mm = String(today.getMonth()).padStart();
+        var dd = String(today.getDate()).padStart(2,"0");
+        var mm = String(today.getMonth()+1).padStart(2,"0");
         var yyyy = today.getFullYear();
         today = mm + "/" + dd + "/" + yyyy;
 
@@ -29,17 +29,17 @@ $(document).ready(function () {
            console.log(response);
         });
     
-        console.log(dd)
+       
     })
     
 });
 
-// /**
-//  * 
-//  * @param {*} day 
-//  * @param {*} month 
-//  * @returns {string}
-//  */
+/**
+ * 
+ * @param {*} day 
+ * @param {*} month 
+ * @returns {string}
+ */
 
 function zodiacSign(day, month) {
     var zodiacSigns = {
