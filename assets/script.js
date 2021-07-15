@@ -1,4 +1,10 @@
-
+$(document).ready(function () {
+    $("").on("click", function (e) {
+        e.preventDefault();
+        // pull the month and day 
+        
+    })
+})
 
 
 
