@@ -17,9 +17,12 @@ Luke McMurtrie
 Luke's Github: https://github.com/LukeMcM89
 
 
-This project is centered around a users horoscope and moon chart. 
+This project is centered around a users horoscope and moon chart. When a user inputs their birth information, they are shown their horoscope. The application also features a moon API that displays the current phase of the lunar cycle. 
+
+This application utilizes the Bulma CSS framework.
 
 
+Link to deployed website: https://lukemcm89.github.io/Project-Horoscope/
 
 
-Link to deployed website: 
+Thank you for your time!
