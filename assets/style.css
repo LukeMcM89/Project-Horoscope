@@ -1,12 +1,15 @@
-
-body {
-	margin: 0;
-  /* to get rid of scrolling */
-  /* overflow: hidden; */
+.right {
+	margin-bottom: 0px;
 }
 
+/* body {
+	margin: 0; */
+  /* to get rid of scrolling */
+  /* overflow: hidden; */
+/* } */
+
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Uchen', serif;
 }
 
 .container-input {
@@ -14,7 +17,7 @@ body {
 }
 
 label {
-  font-family: 'Unica One', cursive;
+  font-family: 'Uchen', serif;
 }
 /*this is for the background 
 
