@@ -4,6 +4,18 @@ body {
   /* to get rid of scrolling */
   /* overflow: hidden; */
 }
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.container-input {
+  width: 30%;
+}
+
+label {
+  font-family: 'Unica One', cursive;
+}
 /*this is for the background 
 
 /* .container {
