@@ -1,17 +1,45 @@
-const settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=leo&day=today",
-    "method": "POST",
-    "headers": {
-        "x-rapidapi-key": "aec57077b7mshe7c9917e3720dc3p12dae9jsn6c72418df371",
-        "x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com"
-    }
-};
+$(document).ready(function () {
+    $("#Submit").on("click", function (e) {
+        e.preventDefault();
+        // pull the month and day 
+        var day = $("#day").val();
+        var month = $("#month").val();
+        var day = $("#day").val()
+        var month = $("#month").val()
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2,"0");
+        var mm = String(today.getMonth()+1).padStart(2,"0");
+        var yyyy = today.getFullYear();
+        today = mm + "/" + dd + "/" + yyyy;
 
-$.ajax(settings).done(function (response) {
-    console.log(response);
+        var signs =  zodiacSign(day,month);
+        
+        const settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": `https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${signs}&day=today`,
+           "method": "POST",
+           "headers": {
+               "x-rapidapi-key": "aec57077b7mshe7c9917e3720dc3p12dae9jsn6c72418df371",
+               "x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com"
+           }
+        };
+        
+        $.ajax(settings).done(function (response) {
+           console.log(response);
+        });
+    
+       
+    })
+    
 });
+
+/**
+ * 
+ * @param {*} day 
+ * @param {*} month 
+ * @returns {string}
+ */
 
 function zodiacSign(day, month) {
     var zodiacSigns = {
@@ -54,5 +82,8 @@ function zodiacSign(day, month) {
     } else if (( month == 11 && day >=22) || ( month == 12 && day <= 21)) {
         return zodiacSigns.sag
     }
+    console.log(zodiacSigns)
 }
+
+
 
