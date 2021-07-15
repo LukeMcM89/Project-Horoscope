@@ -8,11 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
-
     <title>Horoscope</title>
     <!-- <link rel="stylesheet" href="assets/style.css"> -->
 </head>
@@ -20,47 +15,23 @@
 <body>
     <header>
         <!-- nav bar -->
-
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar has-shadow is primary">
             <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="assets/horoscope.jpeg" width="100" height="100">
+                <a class="navbar-item">
+                    <img src="./assets/horoscope.jpeg" alt="site logo" style="max-height: 70px" class="py-2 px-2">
                 </a>
             </div>
         </nav>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="horoscopeBasicBar">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        <div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">Horoscope</a>
+                <a class="navbar-item">Contact Us</a>
+            </div>
+        </div>
 
-            <div id="horoscopeBasicBar" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
-                    </a>
-
-                    <a class="navbar-item">
-                        Horoscope
-                    </a>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            More
-                        </a>
-
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
     </header>
-
     <!-- carousel -->
     <section class="section">
         <div class="container">
@@ -100,6 +71,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+
     <script src="./assets/script.js"></script>
 
     <script src="assets/carousel.js"></script>
@@ -108,3 +81,41 @@
 
 
 </body>
+
+
+<!--
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+            <div class="numbertext"> 1 / 3</div>
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Caption Text </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 2 / 3</div>
+            <img src="img2.jpg" style="width: 100%">
+            <div class="text">Caption Text </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 3 / 3</div>
+            <img src="img3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+-->
+
+<!--   
+    <a class="prev" onclick"plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick"plusSlides(1)">&#10095;</a>
+</div>
+-->
+
+
+<!--
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+-->
