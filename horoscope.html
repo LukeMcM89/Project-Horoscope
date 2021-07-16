@@ -4,80 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Your Horoscope</title>
-
- 
-   
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-   <!-- trying to center -->
+    <!-- trying to center -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" rel="stylesheet" />
-
 </head>
 
 <body>
     <header>
-        <div class="navbar-fixed" id="navbar">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="index.html" id="navbarHoro" class="horo-logo">Decode Your Horoscope</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="horoscope.html">About Horoscopes</a></li>
-                        <li><a href="contact.html">Contact US</a></li>
-                    </ul>
+        <!--Navbar-->
+        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/horoscope.jpeg" width="100" height="100">
+                </a>
+            </div>
+        </nav>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="horoscopeBasicBar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div>
+            <div id="horoscopeBasicBar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="horoscope.html">
+                        Horoscope
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="contact.html">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
-        
     </header>
-
-<!-- input form -->
-
-    <div class="section-input">
-        <!-- for centering -->
-        <div class="container-input">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                    <!-- end -->
+    <!-- Input Form -->
+    <!-- for centering -->
+    <div class="container-input">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <!-- end -->
                 <div class="field">
                     <label class="label">day</label>
-                    <input class="input is-small" id= "day" type="text"placeholder="birth day">
-                 </div>
-            <div class="field">
-                <label class="label">Month</label>
-                <input class="input is-small" id = month type="text"placeholder="birth month ">
+                    <input class="input is-small" id="day" type="text" placeholder="birth day">
+                </div>
+                <div class="field">
+                    <label class="label">Month</label>
+                    <input class="input is-small" id=month type="text" placeholder="birth month ">
+                </div>
+                <button class="button is-primary is-small is-outlined" id="Submit">Submit</button>
             </div>
-         
-        <button class="button is-primary is-small is-outlined" id="Submit">Submit</button>
         </div>
-       </div>
-      </div>
+        <div class="readings">
+            <p id="signs"></p>
+            <p id="date"></p>
+            <p id="reading"></p>
+            <p id="compatibility"></p>
+        </div>
 
-     
-      
-      
-      
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
 
     <script src="./assets/script.js"></script>
-
     <script src="assets/carousel.js"></script>
-
     <script src="assets/background.js"></script>
-
-      
-        
-
-
-
 </body>
-
-
-
-
-</html>

@@ -27,10 +27,15 @@ $(document).ready(function () {
         
         $.ajax(settings).done(function (response) {
            console.log(response);
+           document.querySelector(".readings").innerHTML= `
+           <p>signs: ${signs} </p> 
+           <p> reading: ${response.description} </p>`
+       })
         });
     console.log(signs)
-       
-    })
+    
+
+
     
 });
 
