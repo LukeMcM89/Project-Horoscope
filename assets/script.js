@@ -49,6 +49,7 @@ $(document).ready(function () {
 
     
 });
+// used https://gist.github.com/kladov/5080233
 /**
  * 
  * @param {*} day 
