@@ -27,13 +27,26 @@ $(document).ready(function () {
         
         $.ajax(settings).done(function (response) {
            console.log(response);
+           var historyObj = {
+               day: day,
+               month: month,
+               sign: signs,
+               desc: response.description
+           }
+
+           localStorage.setItem("lastSearch", JSON.stringify(historyObj))
+           document.querySelector(".readings").innerHTML= `
+           <p>signs: ${signs} </p> 
+           <p> reading: ${response.description} </p>`
+       })
         });
+    console.log(signs)
     
-       
-    })
+
+
     
 });
-
+console.log(JSON.parse(localStorage.getItem("lastSearch")))
 /**
  * 
  * @param {*} day 
