@@ -4,8 +4,6 @@ $(document).ready(function () {
         // pull the month and day 
         var day = $("#day").val();
         var month = $("#month").val();
-        var day = $("#day").val()
-        var month = $("#month").val()
         var today = new Date();
         var dd = String(today.getDate()).padStart(2,"0");
         var mm = String(today.getMonth()+1).padStart(2,"0");
@@ -31,13 +29,16 @@ $(document).ready(function () {
                day: day,
                month: month,
                sign: signs,
+               today:today,
                desc: response.description
            }
 
            // shows on the html
            document.querySelector(".readings").innerHTML= `
+           <p><strong>Date</strong>: ${today} </p>
            <p><strong>Zodiac Sign</strong>: ${signs} </p> 
-           <p><strong>Horoscope Reading</strong>: ${response.description} </p>`
+           <p><strong>Horoscope Reading</strong>: ${response.description} </p>
+           <p><strong>Compatibility</strong>: ${response.compatibility} </p>`
            console.log(JSON.parse(localStorage.getItem("lastSearch")))
            localStorage.setItem("lastSearch", JSON.stringify(historyObj))
         })
