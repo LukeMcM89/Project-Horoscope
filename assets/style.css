@@ -142,7 +142,7 @@ body{
 	  
 	  .btn:hover .btn-label:after,
 	  .btn:active .btn-label:after {
-		transition:opacity: 0.5s, top 0.5s, right 0.5s;
+		transition:opacity 0.5s, top 0.5s, right 0.5s;
 		opacity:1;
 		right:10px;
 		top:22%;
