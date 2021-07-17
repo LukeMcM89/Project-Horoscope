@@ -17,6 +17,30 @@
 }
 
 label {
+  font-family: 'Uchen', serif;
+}
+
+/* background */
+body {
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Microsoft yahei',Verdana, Arial, Helvetica, sans-serif;
+}
+canvas {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#welcome{
+  width:200px;
+  height:200px;
+  background:pink;
+  position:relative;
+  margin:auto;
+  top:0;left:0;right:0;bottom:0;
+}
   font-family: 'Uchen', serif; */
 
 /*this is for the background 
