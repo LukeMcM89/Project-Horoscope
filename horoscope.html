@@ -13,7 +13,12 @@
 
 <body>
     <header>
-        <!--Navbar-->
+        <!-- background -->
+        <canvas id="canvas" width="1920" height="922"></canvas>
+
+<!-- <div id='welcome'>welcome</div> -->
+       
+<!--Navbar-->
         <nav class="navbar is-link" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
@@ -47,14 +52,15 @@
                     </div>
                 </div>
     </header>
+
     <!-- Input Form -->
-    <!-- for centering -->
+
     <div class="container-input">
         <div class="columns is-centered">
-            <div class="column is-half">
+            <div class="column is-one-quarter">
                 <!-- end -->
                 <div class="field">
-                    <label class="label">day</label>
+                    <label class="label">Day</label>
                     <input class="input is-small" id="day" type="text" placeholder="birth day">
                 </div>
                 <div class="field">
@@ -72,7 +78,8 @@
         </div>
         <!-- moonapi -->
         <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
-            <div style="font-weight:bold">The moon today</div>
+            <div class="column is-one-quarter"></div>
+            <div style="font-weight:bold">Today's Lunar Phase </div>
             <div
                 style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter:drop-shadow(0 0 30px hsl(220,100%,15%))">
             </div>
@@ -81,6 +88,8 @@
         </div>
         <script>(function () { var d = new Date().getDate(); var m = document.querySelectorAll("#contain_moon div"); var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(245,245,245)&shadeColor=rgb(17,17,17)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + ""; m[1].style.height = "100px"; a.onreadystatechange = function () { if (a.readyState == 4 && a.status == 200) { var b = JSON.parse(a.responseText); m[1].innerHTML = b.phase[d].svg; if (typeof moon_widget_loaded == "function") moon_widget_loaded(b); m[2].innerHTML = b.phase[d].npWidget; m[3].innerHTML = "Next full moon<br>" + b.nextFullMoon } }; a.open("GET", url, true); a.send() })()</script>
     </div>
+    <script src="https://web.tanzhouedu.com/js/index1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

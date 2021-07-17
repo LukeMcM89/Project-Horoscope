@@ -36,8 +36,8 @@ $(document).ready(function () {
 
            // shows on the html
            document.querySelector(".readings").innerHTML= `
-           <p>signs: ${signs} </p> 
-           <p> reading: ${response.description} </p>`
+           <p><strong>Zodiac Sign</strong>: ${signs} </p> 
+           <p><strong>Horoscope Reading</strong>: ${response.description} </p>`
            console.log(JSON.parse(localStorage.getItem("lastSearch")))
            localStorage.setItem("lastSearch", JSON.stringify(historyObj))
         })
