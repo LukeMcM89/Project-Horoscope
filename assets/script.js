@@ -34,12 +34,13 @@ $(document).ready(function () {
                desc: response.description
            }
 
-           localStorage.setItem("lastSearch", JSON.stringify(historyObj))
+           // shows on the html
            document.querySelector(".readings").innerHTML= `
            <p>signs: ${signs} </p> 
            <p> reading: ${response.description} </p>`
            console.log(JSON.parse(localStorage.getItem("lastSearch")))
-       })
+           localStorage.setItem("lastSearch", JSON.stringify(historyObj))
+        })
         });
     console.log(signs)
     
