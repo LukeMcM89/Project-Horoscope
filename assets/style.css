@@ -1,6 +1,6 @@
-.right {
+/* .right {
 	margin-bottom: 0px;
-}
+} */
 
 /* body {
 	margin: 0; */
@@ -8,7 +8,7 @@
   /* overflow: hidden; */
 /* } */
 
-body {
+/* body {
   font-family: 'Uchen', serif;
 }
 
@@ -17,8 +17,8 @@ body {
 }
 
 label {
-  font-family: 'Uchen', serif;
-}
+  font-family: 'Uchen', serif; */
+
 /*this is for the background 
 
 /* .container {
@@ -43,3 +43,20 @@ label {
 	height: 4px;
 	width: 4px;
 } */
+
+body{
+	background-image: linear-gradient(75deg,white,  lightgray 5%,white 15%, lightgray 55% , lightgray 90%,white);
+	background-size: 100%;
+	background-attachment: fixed;
+	min-height: 300px;
+	font-family: arial,sans-serif;
+	min-width:300px;
+	}
+	a{
+	  color:black;
+	}
+	#contain_moon{
+	  background-color:black;
+	  color:gray;
+	
+	}

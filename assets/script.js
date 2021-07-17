@@ -38,6 +38,7 @@ $(document).ready(function () {
            document.querySelector(".readings").innerHTML= `
            <p>signs: ${signs} </p> 
            <p> reading: ${response.description} </p>`
+           console.log(JSON.parse(localStorage.getItem("lastSearch")))
        })
         });
     console.log(signs)
@@ -46,7 +47,6 @@ $(document).ready(function () {
 
     
 });
-console.log(JSON.parse(localStorage.getItem("lastSearch")))
 /**
  * 
  * @param {*} day 
