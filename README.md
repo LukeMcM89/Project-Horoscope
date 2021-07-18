@@ -26,3 +26,5 @@ Link to deployed website: https://lukemcm89.github.io/Project-Horoscope/
 
 
 Thank you for your time!
+
+<img width="1434" alt="Project1_ScreenShot" src="https://user-images.githubusercontent.com/80003989/126084210-0d28c628-5a99-4b37-a543-1469de7fc765.png">
