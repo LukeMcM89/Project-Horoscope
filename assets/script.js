@@ -38,7 +38,8 @@ $(document).ready(function () {
            <p><strong>Date</strong>: ${today} </p>
            <p><strong>Zodiac Sign</strong>: ${signs} </p> 
            <p><strong>Horoscope Reading</strong>: ${response.description} </p>
-           <p><strong>Compatibility</strong>: ${response.compatibility} </p>`
+           <p><strong>Compatibility</strong>: ${response.compatibility} </p>
+           <p><strong>Your color</strong>: ${response.color}`
            console.log(JSON.parse(localStorage.getItem("lastSearch")))
            localStorage.setItem("lastSearch", JSON.stringify(historyObj))
         })
@@ -50,12 +51,7 @@ $(document).ready(function () {
     
 });
 // used https://gist.github.com/kladov/5080233
-/**
- * 
- * @param {*} day 
- * @param {*} month 
- * @returns {string}
- */
+
 
 function zodiacSign(day, month) {
     var zodiacSigns = {
